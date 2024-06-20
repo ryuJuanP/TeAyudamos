@@ -7,13 +7,19 @@ import {
   ScrollView,
   Image,
   Button,
+  Alert,
 } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
 import styles from './styles';
-import Registro from './Registro';
+import Registro from './registro';
+import Perfil from './perfil';
 
 export default function App() {
   const [password, setPassword] = useState('');
+
+  const [user, setUser] = useState('');
+
+  const [Logeado, setLogeado] = useState(false);
 
   const [isSelected, setSelection] = useState(false);
 
@@ -21,6 +27,18 @@ export default function App() {
 
   if (mostrarRegistro) {
     return <Registro setMostrarRegistro={setMostrarRegistro} />;
+  }
+
+  const Login = () => {
+    if (user === 'Juan' && password === '1234') {
+      setLogeado(true);
+    } else {
+      Alert.alert('Error', 'credenciales incorrectas');
+    }
+  };
+
+  if (Logeado) {
+    return <Perfil />;
   }
 
   return (
@@ -48,13 +66,16 @@ export default function App() {
           <Text style={styles.login}>Iniciar Sesión</Text>
           <View style={styles.inputcontainer}>
             <Text style={styles.label}>Correo electronico</Text>
-            <TextInput style={styles.textinput} />
+            <TextInput
+              style={styles.textinput}
+              onChangeText={text => setUser(text)}
+            />
             <Text style={styles.label}>Contraseña</Text>
             <TextInput
               style={styles.textinput}
               secureTextEntry={true}
               value={password}
-              onChangeText={setPassword}
+              onChangeText={text => setPassword(text)}
             />
 
             <View style={styles.checkcontainer}>
@@ -69,7 +90,7 @@ export default function App() {
           </View>
 
           <View style={styles.buttoncontainer}>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={Login}>
               <Text style={styles.textbutton}>Iniciar sesión</Text>
             </TouchableOpacity>
           </View>
