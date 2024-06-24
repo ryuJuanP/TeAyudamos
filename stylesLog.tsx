@@ -12,7 +12,8 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 0.5,
-    borderColor: '#e6e6e6',
+    borderColor: '#00b0b3',
+    backgroundColor: '#e6ffff',
   },
   logo: {
     marginRight: '1%',
@@ -34,6 +35,16 @@ export default StyleSheet.create({
   textA: {
     color: 'black',
     fontSize: 16,
+  },
+
+  infoContainer: {
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  iconimg: {
+    height: '40%',
+    width: '3%',
+    marginRight: '-2%',
   },
   textB: {
     color: 'black',
@@ -73,6 +84,12 @@ export default StyleSheet.create({
     borderColor: '#ff6666',
   },
 
+  optionsimg: {
+    marginRight: '5%',
+    width: '7%',
+    height: '135%',
+  },
+
   optionsText: {
     color: 'black',
   },
@@ -83,17 +100,25 @@ export default StyleSheet.create({
     padding: '7%',
   },
 
+  borrarimg: {
+    height: '80%',
+    width: '13%',
+    marginRight: '5%',
+  },
+
   button: {
     backgroundColor: '#ff6666',
     height: '130%',
     padding: '3%',
     width: '60%',
     borderRadius: 6,
-    alignItems: 'flex-end',
+    alignItems: 'flex-start',
     justifyContent: 'center',
+    flexDirection: 'row',
   },
 
   buttonText: {
     color: 'white',
+    marginTop: '3%',
   },
 });
