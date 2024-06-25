@@ -1,15 +1,15 @@
-import React, {useState} from 'react';
+import CheckBox from '@react-native-community/checkbox';
+import React, { useState } from 'react';
 import {
-  View,
+  Button,
+  Image,
+  ScrollView,
   Text,
   TextInput,
   TouchableOpacity,
-  ScrollView,
-  Button,
-  Image,
+  View,
 } from 'react-native';
-import styles from './styles';
-import CheckBox from '@react-native-community/checkbox';
+import styles from './Styles/styles';
 
 const Registro = ({setMostrarRegistro}) => {
   const [password, setPassword] = useState('');

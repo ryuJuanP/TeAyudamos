@@ -1,18 +1,18 @@
+import CheckBox from '@react-native-community/checkbox';
 import React, {useState} from 'react';
 import {
-  View,
+  Alert,
+  Button,
+  Image,
+  ScrollView,
   Text,
   TextInput,
   TouchableOpacity,
-  ScrollView,
-  Image,
-  Button,
-  Alert,
+  View,
 } from 'react-native';
-import CheckBox from '@react-native-community/checkbox';
-import styles from './styles';
+import styles from './Styles/styles';
+import Perfil from './home';
 import Registro from './registro';
-import Perfil from './perfil';
 
 export default function App() {
   const [password, setPassword] = useState('');
