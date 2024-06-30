@@ -1,8 +1,13 @@
 import React from 'react';
 import {Image, ScrollView, Text, View, TouchableOpacity} from 'react-native';
 import stylesHome from './Styles/stylesHome';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {NavigationContainer} from '@react-navigation/native';
+import Perfil from './perfil';
 
-const home = () => {
+const Tab = createBottomTabNavigator();
+
+const Home = () => {
   return (
     <View style={stylesHome.background}>
       <ScrollView>
@@ -77,4 +82,23 @@ const home = () => {
   );
 };
 
-export default home;
+const Nav = () => {
+  return (
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen
+          name="Perfil"
+          component={Perfil}
+          options={{headerShown: false}}
+        />
+        <Tab.Screen
+          name="Inicio"
+          component={Home}
+          options={{headerShown: false}}
+        />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
+};
+export {Home};
+export default Nav;

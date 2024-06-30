@@ -11,7 +11,7 @@ import {
   View,
 } from 'react-native';
 import styles from './Styles/styles';
-import Perfil from './home';
+import Home from './home';
 import Registro from './registro';
 
 export default function App() {
@@ -38,7 +38,7 @@ export default function App() {
   };
 
   if (Logeado) {
-    return <Perfil />;
+    return <Home />;
   }
 
   return (

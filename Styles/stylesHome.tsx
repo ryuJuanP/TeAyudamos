@@ -157,4 +157,9 @@ export default StyleSheet.create({
     fontSize: 13,
     marginTop: '5%',
   },
+  menuIcon: {
+    alignSelf: 'flex-start',
+    height: 20,
+    width: 20,
+  },
 });

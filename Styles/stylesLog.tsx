@@ -97,13 +97,15 @@ export default StyleSheet.create({
   buttonContainer: {
     height: '13%',
     alignItems: 'center',
+    justifyContent: 'center',
     padding: '7%',
   },
 
   borrarimg: {
-    height: '80%',
-    width: '13%',
+    height: '76%',
+    width: '8%',
     marginRight: '5%',
+    marginTop: '2%',
   },
 
   button: {
