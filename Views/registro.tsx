@@ -1,5 +1,5 @@
 import CheckBox from '@react-native-community/checkbox';
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {
   Button,
   Image,
@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import styles from './Styles/styles';
+import styles from '../Styles/styles';
 
 const Registro = ({setMostrarRegistro}) => {
   const [password, setPassword] = useState('');
@@ -127,7 +127,7 @@ const Registro = ({setMostrarRegistro}) => {
           <View style={styles.imgContainer}>
             <Image
               style={styles.logo}
-              source={require('./assets/images/logo_oldy.png')}
+              source={require('../assets/images/logo_oldy.png')}
             />
           </View>
           <Text style={styles.title}>
@@ -139,7 +139,7 @@ const Registro = ({setMostrarRegistro}) => {
           <View style={styles.imgContainer}>
             <Image
               style={styles.logo2}
-              source={require('./assets/images/corazon.png')}
+              source={require('../assets/images/corazon.png')}
             />
           </View>
 

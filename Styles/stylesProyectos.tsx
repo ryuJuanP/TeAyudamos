@@ -28,7 +28,7 @@ export default StyleSheet.create({
     paddingLeft: 3,
   },
 
-  containerPublicar: {
+  containerProyectos: {
     alignSelf: 'center',
     margin: '10%',
     width: '90%',
@@ -37,38 +37,14 @@ export default StyleSheet.create({
     borderTopWidth: 3,
     borderColor: '#00b0b3',
     flex: 1,
+    alignItems: 'flex-start',
   },
 
-  containerImgDes: {
-    height: '90%',
-    width: '105%',
-  },
-
-  imgDescription: {
-    height: 70,
-    width: 270,
-  },
-
-  buttonView: {
-    height: '100%',
-    alignItems: 'flex-end',
-    padding: '7%',
-  },
-
-  button: {
-    backgroundColor: '#00b0b3',
-    height: '76%',
-    padding: '3%',
-    width: '80%',
-    borderRadius: 2,
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
-  },
-
-  textbutton: {
-    paddingRight: '15%',
-    color: 'white',
+  textProyectos: {
+    textAlign: 'left',
+    color: 'black',
+    fontSize: 18,
+    marginBottom: '4%',
   },
 
   postsContainer: {
@@ -144,6 +120,12 @@ export default StyleSheet.create({
     width: 70,
   },
 
+  text: {
+    fontSize: 15,
+    marginTop: '3%',
+    color: '#00b0b3',
+  },
+
   subtextContainer: {
     marginBottom: '5%',
   },
@@ -198,72 +180,12 @@ export default StyleSheet.create({
     color: 'white',
   },
 
-  container: {
-    backgroundColor: 'white',
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    margin: '5%',
-    marginTop: '0%',
-    paddingBottom: '10%',
-    borderTopWidth: 3,
-    borderColor: '#00b0b3',
-  },
-
-  corazon: {
-    height: 300,
-    width: 300,
-  },
-
-  logo2: {
-    height: 30,
-    width: 300,
-    marginBottom: '4%',
-  },
-  masContainer: {
-    borderTopWidth: 0.5,
-    borderColor: 'red',
-    backgroundColor: 'white',
-    marginTop: '5%',
-    width: '100%',
-    alignItems: 'center',
-  },
-  text: {
-    fontSize: 15,
-    marginTop: '3%',
-    color: '#00b0b3',
-  },
-
-  containerPropuestas: {
-    backgroundColor: 'white',
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    margin: '5%',
-    marginTop: '0%',
-    paddingBottom: '10%',
-  },
-
-  textPropuestas: {
-    fontSize: 17,
-    marginTop: '4%',
-    color: 'black',
-  },
-
-  propuestas: {
-    width: '100%',
-    margin: '5%',
-    marginTop: '10%',
-    paddingBottom: '0%',
-    borderTopWidth: 0.5,
-    borderColor: 'red',
-  },
-
   footerContainer: {
     width: '100%',
     backgroundColor: 'white',
     alignItems: 'center',
     padding: '5%',
+    marginTop: '15%',
   },
 
   logoFooter: {

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, Text, TouchableOpacity, View} from 'react-native';
-import stylesLog from './Styles/stylesLog';
+import stylesLog from '../Styles/stylesLog';
 
 const Perfil = () => {
   return (
@@ -8,7 +8,7 @@ const Perfil = () => {
       <View style={stylesLog.tittleContainer}>
         <Image
           style={stylesLog.logo}
-          source={require('./assets/images/corazon.png')}
+          source={require('../assets/images/corazon.png')}
         />
         <Text style={stylesLog.textTittle}>Perfil</Text>
       </View>
@@ -17,7 +17,7 @@ const Perfil = () => {
         <View style={stylesLog.infoContainer}>
           <Image
             style={stylesLog.iconimg}
-            source={require('./assets/images/icon.png')}
+            source={require('../assets/images/icon.png')}
           />
           <Text style={stylesLog.textB}>Conoce tu información</Text>
         </View>
@@ -29,7 +29,7 @@ const Perfil = () => {
       <View style={stylesLog.profilePicContainer}>
         <Image
           style={stylesLog.profilePic}
-          source={require('./assets/images/corazon.png')}
+          source={require('../assets/images/corazon.png')}
         />
       </View>
 
@@ -38,7 +38,7 @@ const Perfil = () => {
           <View style={stylesLog.optionsContainer}>
             <Image
               style={stylesLog.optionsimg}
-              source={require('./assets/images/info.png')}
+              source={require('../assets/images/info.png')}
             />
             <Text style={stylesLog.optionsText}>Mi información</Text>
           </View>
@@ -47,7 +47,7 @@ const Perfil = () => {
           <View style={stylesLog.optionsContainer}>
             <Image
               style={stylesLog.optionsimg}
-              source={require('./assets/images/soporte.png')}
+              source={require('../assets/images/soporte.png')}
             />
             <Text style={stylesLog.optionsText}>Soporte técnico</Text>
           </View>
@@ -56,7 +56,7 @@ const Perfil = () => {
           <View style={stylesLog.optionsContainer}>
             <Image
               style={stylesLog.optionsimg}
-              source={require('./assets/images/logout.png')}
+              source={require('../assets/images/logout.png')}
             />
             <Text style={stylesLog.optionsText}>Cerrar sesión</Text>
           </View>
@@ -66,7 +66,7 @@ const Perfil = () => {
         <TouchableOpacity style={stylesLog.button}>
           <Image
             style={stylesLog.borrarimg}
-            source={require('./assets/images/borrar.png')}
+            source={require('../assets/images/borrar.png')}
           />
           <Text style={stylesLog.buttonText}>Eliminar cuenta</Text>
         </TouchableOpacity>

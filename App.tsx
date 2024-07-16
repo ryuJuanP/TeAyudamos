@@ -11,8 +11,8 @@ import {
   View,
 } from 'react-native';
 import styles from './Styles/styles';
-import Home from './home';
-import Registro from './registro';
+import Home from './Views/home';
+import Registro from './Views/registro';
 
 export default function App() {
   const [password, setPassword] = useState('');
