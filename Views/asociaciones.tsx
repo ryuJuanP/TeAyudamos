@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 import stylesAsociaciones from '../Styles/stylesAsociasiones';
+import Institucion from './institucionPerfil';
 
 const Asociaciones = () => {
+  const [perfilInst, setPerfilInst] = useState(false);
+
+  if (perfilInst) {
+    return <Institucion setPerfilInst={setPerfilInst} />;
+  }
   return (
     <View style={stylesAsociaciones.background}>
       <ScrollView>
@@ -47,7 +53,7 @@ const Asociaciones = () => {
             </TouchableOpacity>
           </View>
           <View style={stylesAsociaciones.button3Cont}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => setPerfilInst(true)}>
               <View style={stylesAsociaciones.button3}>
                 <Text style={stylesAsociaciones.textbutton}>Ver perfil</Text>
               </View>

@@ -30,7 +30,7 @@ export default function App() {
   }
 
   const Login = () => {
-    if (user === 'Juan' && password === '1234') {
+    if (user === 'Te ayudamos' && password === '1234') {
       setLogeado(true);
     } else {
       Alert.alert('Error', 'credenciales incorrectas');
